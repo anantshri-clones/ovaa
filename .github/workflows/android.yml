@@ -21,7 +21,7 @@ jobs:
         cache: gradle
 
     - name: accept all licenses
-      run: yes | sdkmanager --licenses
+      run: yes | /usr/local/lib/android/sdk/sdkmanager --licenses
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
     - name: Build with Gradle
